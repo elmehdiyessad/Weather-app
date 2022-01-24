@@ -1,0 +1,221 @@
+*{
+	padding: 0;
+	margin: 0;
+	mily: 'Exo 2', sans-serfont-faif;
+
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.bg-degrade{
+    background-image: linear-gradient(#958CAC, #D10076);
+    /*background: transparent;*/
+    background-repeat: no-repeat; /* Repeats vertically across the scree */
+    background-attachment: fixed;
+}
+.city-degrade{
+    background-image: linear-gradient(#001F7C, #D10076);
+}
+
+.border{
+	border: 1px solid rgb(80, 3, 3);
+}
+
+.bg-purple{
+	background: #2E2055;
+}
+
+.bg-green{
+	background: #00FF9B;
+}
+.bg-blue{
+	background: #003EFF;
+}
+.purple{
+	color: #2E2055;
+}
+.red{
+    color: #FE373C;
+}
+
+.green{
+	color: #00FF9B;
+}
+.blue{
+	color: #003EFF;
+}
+
+
+body{
+    background-image: linear-gradient(#958CAC, #2E2055);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#conteneur{
+    height: 470px;
+    width: 750px;
+    margin: auto;
+    background: transparent;
+    /*background: yellow;*/
+    /*border: 2px solid lightgreen;*/
+    position: relative;
+    z-index: 101;
+}
+
+.navbar{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(192,192,192,0.44);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(192,192,192,0.44);
+    box-shadow: 0px 0px 15px 0px rgba(192,192,192,0.44);
+}
+
+
+#cities{
+    height: 470px;
+    width: 675px;
+    /*width: 670px;*/
+    display: block;
+    /*background-color: grey;*/
+    position: relative;
+    overflow: hidden;
+}
+.city{
+    position: relative;
+	height: 400px;
+	width: 200px;
+	border-radius: 10px;
+	color: black;
+	margin: 30px 20px;
+	padding: 12px;
+	-webkit-box-shadow: 0px 0px 15px 3px rgba(192,192,192,0.44);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(192,192,192,0.44);
+    box-shadow: 0px 0px 15px 3px rgba(192,192,192,0.44);
+    transition: opacity 0.4s ease-in-out 0.2s;
+   /* float: left;*/
+}
+.city:last-child{
+    margin-right: 0px;
+}
+.city:hover{
+    opacity: 0.77;
+    /*transform: scale(0.9);*/
+   /* float: left;*/
+}
+
+#arrowback{
+    position: absolute;
+    top: 45%;
+    left: 1px;
+}
+
+#arrownext{
+    position: absolute;
+    top: 45%;
+    right: 1px;
+}
+
+.arrownext, .arrowback{
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    border: none;
+}
+.arrownext:hover, .arrowback:hover{
+    opacity: 0.7;
+}
+
+
+
+.city img{
+	width: 170px;
+}
+.temperature{
+	font-size: 40px;
+	text-align: center;
+	display: block;
+}
+.details{
+	max-height: 40px;
+	display: inline-block;
+}
+
+#city-to-add-icon{
+	font-size: 120px;
+	text-align: center;
+}
+
+#menu-verticale{
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    z-index: 99;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.stuck-right{
+    position: absolute;
+    right: 7px;
+}
+
+
+
+
+
+
+
+
+/* CHECKBOX */
+.material-switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: black;
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: #FF1F57;
+    opacity: 0.8;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: white;
+    left: 20px;
+}
+/* END CHECKBOX */
+
+
+
+
